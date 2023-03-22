@@ -1,0 +1,32 @@
+[
+    {
+      "title": "Kenwood, CA",
+      "lat": 38.4135096,
+      "lng": -122.5555221,
+      "description": "<p> kenwood yada yada</p>"
+    },
+    {
+      "title": "Glen Ellen, CA",
+      "lat": 38.3554817,
+      "lng": -122.5596772,
+      "description": "<p>Prett Sonoma Valley...</p>"
+    },
+    {
+      "title": "Sonoma, CA",
+      "lat": 38.291092,
+      "lng": -122.4666091,
+      "description": "<p>Sonoma yada yada</p>"
+    },
+    {
+      "title": "Bordeaux, France",
+      "lat": 44.8636964,
+      "lng": -0.656052,
+      "description": "<p>Good wine here</p>"
+    },
+    {
+      "title": "Paris, France",
+      "lat": 48.8588336,
+      "lng": 2.2769952,
+      "description": "<p>USA should strike like the French</p>"
+    }
+  ]
