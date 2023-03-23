@@ -5,15 +5,20 @@ function initMap() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
       function(position) {
-        var geocoord1 = {
+        var geocoord2 = {
           lat: position.coords.latitude, 
-          lng: position.coords.longitude 
+          lng: position.coords.longitude
         };
-      }
-    );
-    
+        console.log(position.coords.latitude, position.coords.longitude);
+        const map1 = new google.maps.Map(
 
-  $.getJSON( "map.json",
+  
+          document.getElementById("map"), {
+            zoom: 11,
+            center: geocoord2,
+            
+          });  
+          $.getJSON( "map.json",
   function(jsonData) {
 
  //rename this vairable below     
@@ -21,14 +26,6 @@ function initMap() {
           lat: 38.3554817,
           lng: -122.5596772
       };
-                        
-  const map1 = new google.maps.Map(
-    
-  document.getElementById("map"), {
-    zoom: 11,
-    center: geocoord1,
-    
-  }) 
 
   markers = [];
 
@@ -62,19 +59,19 @@ function initMap() {
 
 
 var markers = new google.maps.Marker({
-  position: geocoord1,
+  position: geocoord2,
   map: map1,
   title: 'Here I am!'
-}
-                        );
+});
 
                       
 
 
 }               
                );
-               
-                
+           
+      }
+    );          
             }       
     
           }
